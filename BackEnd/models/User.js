@@ -4,8 +4,9 @@ const {Schema} = mongoose
 const userSchema = new Schema({
      name: String,
      email: String,
-     passWord: String,
-     prfileImage: String, 
+     password: String,
+     confirmPassword: String,
+     profileImage: String, 
      profileBiography: String
 },{
      timestamps: true
