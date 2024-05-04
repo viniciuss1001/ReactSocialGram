@@ -73,8 +73,16 @@ const loginUser = async(req, res) =>{
      })
 }
 
+//get current loggend in user
+const getCurrentUser = async(req, res) => {
+     const user = req.user
+
+     res.status(200).json(user)
+}
+
 module.exports = {
      generateUserToken, 
      registerUser,
-     loginUser
+     loginUser,
+     getCurrentUser
 }
