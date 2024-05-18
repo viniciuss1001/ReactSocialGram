@@ -1,25 +1,27 @@
-import styles from './Navbar.module.css'
+import { NavbarStyled, FormStyled,ListComponent } from './Styles'
 
 //Components
 import { NavLink, Link } from 'react-router-dom'
-import { BsSearch, BsHouseDoorFill, BsFillPersonFill, BsCameraFill } from 'react-icons/bs'
+import { BsSearch, BsHouseDoorFill} from 'react-icons/bs'
 export const Navbar = () => {
   return (
-    <nav id='nav' className={styles.navbar}>
+    <NavbarStyled id='nav' >
       <Link to='/'>React Gram</Link>
 
-      <form style={styles.searchform}>
-        <BsSearch />
-        <input type="text"/>
-      </form>
+      <FormStyled >
+        <BsSearch className=''/>
+        <input type="text" placeholder='Pesquisar'
+        minLength={3}
+        />
+      </FormStyled>
 
-      <ul id="navLinks">
+      <ListComponent >
         <NavLink to='/'>
           <BsHouseDoorFill />
         </NavLink>
         <NavLink to='/register'>Cadastrar</NavLink>
         <NavLink to='/login'>Entrar</NavLink>
-      </ul>
-    </nav>
+      </ListComponent>
+    </NavbarStyled>
   )
 }
