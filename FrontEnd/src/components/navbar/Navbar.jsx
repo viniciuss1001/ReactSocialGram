@@ -1,4 +1,4 @@
-import { NavbarStyled, FormStyled,ListComponent } from './Styles'
+import { NavbarStyled, FormStyled,ListComponent, Logo } from './Styles'
 
 //Components
 import { NavLink, Link } from 'react-router-dom'
@@ -6,7 +6,9 @@ import { BsSearch, BsHouseDoorFill} from 'react-icons/bs'
 export const Navbar = () => {
   return (
     <NavbarStyled id='nav' >
+    <Logo>
       <Link to='/'>React Gram</Link>
+    </Logo>
 
       <FormStyled >
         <BsSearch className=''/>

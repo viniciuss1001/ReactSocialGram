@@ -1,11 +1,19 @@
 import styled from 'styled-components'
 
+export const Logo = styled.span`
+     a{
+          color: #fff;
+          text-decoration: none;
+          text-align: center;
+     }
+`
+
 export const NavbarStyled = styled.nav`
      padding: 2rem;
      display: flex;
      justify-content: space-between;
      align-items: center;
-     background-color: royalblue;
+     background-color: #003049;
      border-bottom: 1px solid #363636;
 
 `
@@ -13,21 +21,26 @@ export const NavbarStyled = styled.nav`
 export const FormStyled = styled.form`
      position: relative;
      width: 20%;
+     background: #0f0f0f;
+     border-radius: 4px;
+     height: fit-content;
+     padding: 1rem;
+     margin: 0 auto;
 
-     i{
-          height: 2rem;
-          width: 2rem;
-     }
      input{
           padding: .5rem;
-          border-radius: .3rem;
+          border-radius: none;
           border: none;
           margin: 0;
           outline: none;
           width: 90%;
+          background-color: transparent;
 
           ::placeholder{
                color: gray;
+          }
+          &:focus{
+               border-bottom: 1px solid #fff;
           }
      }
 `

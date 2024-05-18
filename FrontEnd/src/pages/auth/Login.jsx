@@ -1,7 +1,6 @@
-import './Auth.module.css'
-
+import { FormContainerDiv } from "./Styles"
 export const LoginComponent = () => {
   return (
-    <div>Login</div>
+    <FormContainerDiv>Login</FormContainerDiv>
   )
 }
