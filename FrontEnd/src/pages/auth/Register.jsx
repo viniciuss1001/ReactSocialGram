@@ -1,6 +1,15 @@
 import {Link} from 'react-router-dom'
 import { FormContainerDiv, FormContent } from './Styles'
+import { useState } from 'react'
 export const RegisterComponent = () => {
+  //states to register user
+  const [name, setName] = useState("")
+
+  const handleSubmit = (e) =>{
+    e.preventDefault()
+
+  }
+
   return (
     <FormContainerDiv>
       <h2>ReactSocialGram</h2>
